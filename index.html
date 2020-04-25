@@ -2,40 +2,62 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy to as many people as possible.">
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css" />
     <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
     <title>Omnifood</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicons/site.webmanifest">
+    <link rel="mask-icon" href="resources/favicons/safari-pinned-tab.svg" color="#ffffff">
+    <link rel="shortcut icon" href="resources/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
 
 <body>
     <header>
         <nav>
             <div class="row">
                 <img src="resources/img/logo-white.png" alt="Omnifood Logo" class="logo" />
-                <ul class="main-nav">
-                    <li><a href="#">Food Delivery</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Our Cities</a></li>
-                    <li><a href="#">Sign up</a></li>
+                <img src="resources/img/logo.png" alt="Omnifood Logo" class="logo-black" />
+
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#features">Food Delivery</a></li>
+                    <li><a href="#works">How it works</a></li>
+                    <li><a href="#cities">Our Cities</a></li>
+                    <li><a href="#plans">Sign up</a></li>
                 </ul>
+                <a class="mobile-nav-icon js--mobile-nav-icon">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </a>
             </div>
         </nav>
         <div class="hero-text-box">
-            <h1>Goodbye junk food. </br>Hello super healthy meals.</h1>
-            <a class="btn btn-full" href="#">I’m hungry</a>
-            <a class="btn btn-ghost" href="#">Show me more</a>
+            <h1>Goodbye junk food. <br>Hello super healthy meals.</h1>
+            <a class="btn btn-full js--scroll-to-plans" href="#">I’m hungry</a>
+            <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
         </div>
     </header>
 
-    <section class="section-features">
+    <section class="section-features js--section-features" id="features">
         <div class="row">
             <h2>Get food fast &mdash; not fast food.</h2>
             <p class="long-copy">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always
                 busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
         </div>
 
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="col span-1-of-4 box">
                 <ion-icon class="icon-big" name="infinite-outline"></ion-icon>
                 <h3>Up to 365 days/year</h3>
@@ -66,7 +88,8 @@
         </div>
     </section>
 
-    <section class="section-meals">
+    <section class="section-meals" id="meals">
+        <h2 style="display: none;">jhhj</h2>
         <ul class="meals-showcase clearfix">
             <li>
                 <figure class="meal-photo">
@@ -114,13 +137,13 @@
         </ul>
     </section>
 
-    <section class="section-steps">
+    <section class="section-steps" id="works">
         <div class="row">
             <h2>How it works &mdash; Simple as 1, 2, 3</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-2 steps-box">
-                <img src="resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen" />
+                <img src="resources/img/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen js--wp-2" />
             </div>
 
             <div class="col span-1-of-2 steps-box">
@@ -144,13 +167,14 @@
                         alt="Playstore Button" /></a>
 
             </div>
+        </div>
     </section>
 
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
-        <div class="row">
+        <div class="row js--wp-3">
             <div class="col span-1-of-4 box">
                 <img src="resources/img/lisbon-3.jpg" alt="Lisbon" />
                 <h3>Lisbon</h3>
@@ -159,8 +183,7 @@
                 </div>
 
                 <div class="city-feature">
-                    <ion-icon name="star" class="icon-small"></ion-icon>
-                    </ion-icon> 60+ top chefs
+                    <ion-icon name="star" class="icon-small"></ion-icon> 60+ top chefs
                 </div>
 
                 <div class="city-feature">
@@ -250,13 +273,13 @@
     </section>
 
 
-    <section class="section-plans">
+    <section class="section-plans js--section-plans" id="plans">
         <div class="row">
             <h2>Start eating healthy today</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-3">
-                <div class="plan-box">
+                <div class="plan-box js--wp-4">
                     <div>
                         <h3>Premium</h3>
                         <p class="plan-price">$399 <span>/ month</span></p>
@@ -422,16 +445,66 @@
     </section>
 
 
-    <!-- Section 7: Contact form
-Fields to include:
-Name
-Email
-How did you find us?
-Newsletter
-Drop us a line -->
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">iOS App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </ul>
+            </div>
 
+            <div class="col span-1-of-2">
+                <ul class="social-icons">
+                    <li>
+                        <a href="#">
+                            <ion-icon class="facebook" name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ion-icon class="twitter" name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ion-icon class="google" name="logo-google"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <ion-icon class="instagram" name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>
+                Copyright &copy; 2020 by Omnifood. All rights reserved.
+            </p>
+        </div>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src=" https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="vendors/javascript/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164523627-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-164523627-1');
+    </script>
+
 </body>
-</head>
 
 </html>
